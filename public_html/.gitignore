@@ -1,6 +1,14 @@
-# Ignore compressed zip archives
-Final.zip
+# Sensitive Database Files & Configs
+*.sql
+db_connect.php
+.env
 
-# Ignore local editor configuration
+# Archives & Backups
+*.zip
+*.rar
+*.tar.gz
+
+# Editor & OS Files
 .vscode/
 .DS_Store
+Thumbs.db
