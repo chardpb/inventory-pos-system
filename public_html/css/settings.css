@@ -1,0 +1,156 @@
+.profile-card {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2b6cb0;
+    padding: 24px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.profile-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.form-group label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px 14px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.1);
+}
+
+.btn-save {
+    background-color: #2b6cb0;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.2s;
+    height: 40px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-save:hover {
+    background-color: #2c5282;
+}
+
+.btn-update {
+    background-color: #38a169;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-admin {
+    background-color: #ebf8ff;
+    color: #2b6cb0; padding: 4px 8px;
+    border-radius: 4px; font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #bee3f8;
+}
+
+.badge-manager {
+    background-color: #faf5ff;
+    color: #6b46c1; padding: 4px 8px;
+    border-radius: 4px; font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #e9d8fd;
+}
+
+.badge-employee {
+    background-color: #f1f5f9;
+    color: #475569; padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #cbd5e1;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 5px 15px 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar-logo-img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: -25px auto 5px auto;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
+}
+
+.sidebar-brand-text {
+    color: #1abc9c;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Force the Settings Header to align perfectly */
+.table-container > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container h2 {
+    margin: 0;
+}

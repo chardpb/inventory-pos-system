@@ -1,0 +1,6 @@
+# Ignore compressed zip archives
+Final.zip
+
+# Ignore local editor configuration
+.vscode/
+.DS_Store

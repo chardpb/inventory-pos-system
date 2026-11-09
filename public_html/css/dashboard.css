@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding-top: 30px;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo {
+    text-align: center;
+    color: #1abc9c;
+    margin-bottom: 40px;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.sidebar-menu { list-style: none; }
+
+.sidebar-menu li a {
+    display: block;
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar-menu li a:hover,
+.sidebar-menu li a.active {
+    background-color: #34495e;
+    border-left: 5px solid #1abc9c;
+    padding-left: 20px;
+}
+
+.sidebar-menu li a.text-red:hover {
+    border-left: 5px solid #e74c3c;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.kpi-grid {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.kpi-card {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.kpi-title {
+    font-size: 14px;
+    color: #7f8c8d;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.kpi-value {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.card-green {
+    border-bottom:5px solid #27ae60;
+}
+
+.card-green .kpi-value {
+    color: #27ae60;
+}
+
+.card-red {
+    border-bottom: 5px solid #e74c3c;
+}
+
+.card-red .kpi-value {
+    color: #e74c3c;
+}
+
+.card-blue {
+    border-bottom: 5px solid #3498db;
+}
+
+.card-blue .kpi-value {
+    color: #3498db;
+}
+
+.table-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 2px solid #dddddd;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 14px;
+}
+
+tr:hover { background-color: #f1f5f9; }
+
+.btn-view {
+    background-color: #f39c12;
+    color: #ffffff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-view:hover { background-color: #e67e22; }
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center; align-items: center; z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 450px;
+    box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-top: 5px solid #f39c12;
+}
+
+.close-btn {
+    position: absolute; top: 15px; right: 20px;
+    font-size: 24px; cursor: pointer; color: #7f8c8d;
+}
+.close-btn:hover { color: #e74c3c; }
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #ccc;
+    font-size: 15px;
+}
+
+.receipt-row strong {
+    color: #2c3e50;
+}
+
+.sidebar-header {
+    text-align: center;
+    padding: 5px 15px 20px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar-logo-img {
+    width: 90px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: -25px auto 5px auto;
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.3));
+}
+
+.sidebar-brand-text {
+    color: #1abc9c;
+    font-size: 22px;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* The container holding the avatar, name, and dropdown */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+/* The actual dropdown box (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #ffffff;
+    min-width: 220px;
+    box-shadow: 0px 8px 24px rgba(0,0,0,0.12);
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Show the dropdown menu on hover */
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* The links inside the dropdown */
+.dropdown-item {
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #475569;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 1px solid #f1f5f9;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-item:hover {
+    background-color: #f8fafc;
+    color: #2c3e50;
+}
+
+/* The red/green badges inside the dropdown */
+.notif-badge {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 12px;
+}
+
+.sales-badge {
+    background-color: #27ae60;
+}
+
+/* The avatar styling */
+.user-avatar {
+    background-color: #3498db;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* The Notification Bell */
+.bell-icon-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Control the size of the bell image */
+.bell-icon-wrapper img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* The red dot on the bell */
+.bell-badge-total {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/* Control the size of custom icons inside the dropdown */
+.dropdown-item img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* --- ADD THESE LINES HERE --- */
+.sidebar-menu::-webkit-scrollbar {
+    display: none;
+}
+.sidebar-menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

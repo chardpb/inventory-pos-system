@@ -1,0 +1,56 @@
+.badge-sale {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #c3e6cb;
+}
+
+.badge-update {
+    background-color: #cce5ff;
+    color: #004085;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #b8daff;
+}
+
+.badge-delete {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #f5c6cb;
+}
+
+.badge-system {
+    background-color: #e2e3e5;
+    color: #383d41;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #d6d8db;
+}
+
+.log-table th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.log-table td {
+    border-bottom: 1px solid #eee;
+    padding: 12px 10px;
+    font-size: 14px;
+}
+
+.timestamp-col {
+    color: #7f8c8d;
+    font-size: 13px;
+    font-family: monospace;
+}
